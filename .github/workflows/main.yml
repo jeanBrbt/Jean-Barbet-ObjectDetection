@@ -15,11 +15,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+       # Lire la version du SDK dans global.json
+      - name: Read SDK version from global.json
+        id: read-sdk-version
+        run: |
+          sdk_version=$(cat global.json | jq -r '.sdk.version')
+          echo "SDK version found: $sdk_version"
+          echo "##[set-output name=sdk_version;$sdk_version]"
+
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: ${{ fromJson(file('global.json')).sdk.version }}
+          dotnet-version: ${{ steps.read-sdk-version.outputs.sdk_version }}
 
       - name: Restore dependencies
         run: dotnet restore
