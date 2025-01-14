@@ -21,8 +21,8 @@ jobs:
       - name: Read SDK version from global.json
         id: read-sdk-version
         run: |
-          sdk_version=$(cat global.json | jq -r '.sdk.version')
-          echo "SDK version found: $sdk_version"
+          $sdk_version = (Get-Content global.json | ConvertFrom-Json).sdk.version
+          Write-Output "SDK version found: $sdk_version"
           echo "##[set-output name=sdk_version;$sdk_version]"
 
 
