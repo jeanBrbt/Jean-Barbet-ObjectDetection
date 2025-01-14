@@ -15,7 +15,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-       # Lire la version du SDK dans global.json
+        
+      - name: Install libgdiplus
+        run: sudo apt-get install -y libgdiplus
+      
+      # Lire la version du SDK dans global.json
       - name: Read SDK version from global.json
         id: read-sdk-version
         run: |
