@@ -11,13 +11,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
         
-      - name: Install libgdiplus
-        run: sudo apt-get install -y libgdiplus
       
       # Lire la version du SDK dans global.json
       - name: Read SDK version from global.json
