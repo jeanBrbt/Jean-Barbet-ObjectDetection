@@ -1,0 +1,6 @@
+@Jean.Barbet.objectDectection.WebApi_HostAddress = http://localhost:5296
+
+GET {{Jean.Barbet.objectDectection.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{858A9BED-4546-4873-BBD4-4F0D1F3A2AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jean.Barbet.objectDetection", "src\Jean.Barbet.objectDetection\Jean.Barbet.objectDetection.csproj", "{8056E41C-2D56-4973-B86E-1A2D692F51CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7427E264-F945-421E-840E-726AF3EE809A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jean.Barbet.objectDetection.Tests", "tests\Jean.Barbet.objectDetection.Tests\Jean.Barbet.objectDetection.Tests.csproj", "{A09DDF3D-62CA-4258-B5C3-8E932BB70987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jean.Barbet.objectDectection.Console", "src\Jean.Barbet.objectDectection.Console\Jean.Barbet.objectDectection.Console.csproj", "{E6EFC4AC-5B84-4A77-9E94-D3FBECFFC991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jean.Barbet.objectDectection.WebApi", "src\Jean.Barbet.objectDectection.WebApi\Jean.Barbet.objectDectection.WebApi.csproj", "{EABBA31D-8A9C-404A-9C55-E95D05B15470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8056E41C-2D56-4973-B86E-1A2D692F51CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8056E41C-2D56-4973-B86E-1A2D692F51CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8056E41C-2D56-4973-B86E-1A2D692F51CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8056E41C-2D56-4973-B86E-1A2D692F51CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09DDF3D-62CA-4258-B5C3-8E932BB70987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09DDF3D-62CA-4258-B5C3-8E932BB70987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09DDF3D-62CA-4258-B5C3-8E932BB70987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09DDF3D-62CA-4258-B5C3-8E932BB70987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EFC4AC-5B84-4A77-9E94-D3FBECFFC991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EFC4AC-5B84-4A77-9E94-D3FBECFFC991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EFC4AC-5B84-4A77-9E94-D3FBECFFC991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EFC4AC-5B84-4A77-9E94-D3FBECFFC991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABBA31D-8A9C-404A-9C55-E95D05B15470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABBA31D-8A9C-404A-9C55-E95D05B15470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABBA31D-8A9C-404A-9C55-E95D05B15470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABBA31D-8A9C-404A-9C55-E95D05B15470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8056E41C-2D56-4973-B86E-1A2D692F51CD} = {858A9BED-4546-4873-BBD4-4F0D1F3A2AD1}
+		{A09DDF3D-62CA-4258-B5C3-8E932BB70987} = {7427E264-F945-421E-840E-726AF3EE809A}
+		{E6EFC4AC-5B84-4A77-9E94-D3FBECFFC991} = {858A9BED-4546-4873-BBD4-4F0D1F3A2AD1}
+		{EABBA31D-8A9C-404A-9C55-E95D05B15470} = {858A9BED-4546-4873-BBD4-4F0D1F3A2AD1}
+	EndGlobalSection
+EndGlobal
